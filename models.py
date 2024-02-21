@@ -440,7 +440,7 @@ def train_model_encdec(train_data: List[Example], dev_data: List[Example], input
     # call your seq-to-seq model, accumulate losses, update parameters
     emb_dim = 300
     hidden_size = 200
-    teacher_forcing_ratio = 1.0
+    teacher_forcing_ratio = 0.5
     epochs = 30
 
     model_input_emb = EmbeddingLayer(emb_dim, len(input_indexer), 0.2)
