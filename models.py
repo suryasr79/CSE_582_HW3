@@ -441,7 +441,7 @@ def train_model_encdec(train_data: List[Example], dev_data: List[Example], input
     emb_dim = 300
     hidden_size = 200
     teacher_forcing_ratio = 0.5
-    epochs = 30
+    epochs = 20
 
     model_input_emb = EmbeddingLayer(emb_dim, len(input_indexer), 0.2)
     model_output_emb = EmbeddingLayer(emb_dim, len(output_indexer), 0.2)
